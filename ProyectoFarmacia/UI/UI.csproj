@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C59F816-9478-4B71-B3FB-89D4A37214B0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Categorias\FormIngresarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categorias\FormIngresarCategoria.Designer.cs">
+      <DependentUpon>FormIngresarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categorias\FormListarCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categorias\FormListarCategorias.Designer.cs">
+      <DependentUpon>FormListarCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\FormActualizarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\FormActualizarCliente.Designer.cs">
+      <DependentUpon>FormActualizarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\FormIngresarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\FormIngresarCliente.Designer.cs">
+      <DependentUpon>FormIngresarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\FormListarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\FormListarCliente.Designer.cs">
+      <DependentUpon>FormListarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogo.Designer.cs">
+      <DependentUpon>FormLogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Producto\FormActualizarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Producto\FormActualizarProducto.Designer.cs">
+      <DependentUpon>FormActualizarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Producto\FormBuscarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Producto\FormBuscarProducto.Designer.cs">
+      <DependentUpon>FormBuscarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Producto\FormIngresarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Producto\FormIngresarProducto.Designer.cs">
+      <DependentUpon>FormIngresarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Producto\FormListarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Producto\FormListarProducto.Designer.cs">
+      <DependentUpon>FormListarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuarios\FormListarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\FormListarUsuarios.Designer.cs">
+      <DependentUpon>FormListarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\FormActualizarVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\FormActualizarVenta.Designer.cs">
+      <DependentUpon>FormActualizarVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\FormBuscarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\FormBuscarCliente.Designer.cs">
+      <DependentUpon>FormBuscarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\FormBuscarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\FormBuscarProducto.Designer.cs">
+      <DependentUpon>FormBuscarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\FormIngresarVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\FormIngresarVenta.Designer.cs">
+      <DependentUpon>FormIngresarVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\FormListarVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\FormListarVenta.Designer.cs">
+      <DependentUpon>FormListarVenta.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Categorias\FormIngresarCategoria.resx">
+      <DependentUpon>FormIngresarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categorias\FormListarCategorias.resx">
+      <DependentUpon>FormListarCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\FormActualizarCliente.resx">
+      <DependentUpon>FormActualizarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\FormIngresarCliente.resx">
+      <DependentUpon>FormIngresarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\FormListarCliente.resx">
+      <DependentUpon>FormListarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogo.resx">
+      <DependentUpon>FormLogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Producto\FormActualizarProducto.resx">
+      <DependentUpon>FormActualizarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Producto\FormBuscarProducto.resx">
+      <DependentUpon>FormBuscarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Producto\FormIngresarProducto.resx">
+      <DependentUpon>FormIngresarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Producto\FormListarProducto.resx">
+      <DependentUpon>FormListarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Usuarios\FormListarUsuarios.resx">
+      <DependentUpon>FormListarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\FormActualizarVenta.resx">
+      <DependentUpon>FormActualizarVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\FormBuscarCliente.resx">
+      <DependentUpon>FormBuscarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\FormBuscarProducto.resx">
+      <DependentUpon>FormBuscarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\FormIngresarVenta.resx">
+      <DependentUpon>FormIngresarVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\FormListarVenta.resx">
+      <DependentUpon>FormListarVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{647dd359-3521-49ff-9ae2-eac2cfaf039d}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pass.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

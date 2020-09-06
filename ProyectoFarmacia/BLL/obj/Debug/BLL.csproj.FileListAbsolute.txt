@@ -1,0 +1,7 @@
+D:\BACKUP SIHESLER\Proyecto Farmacia\Proyecto_Farmacia\BLL\bin\Debug\BLL.dll
+D:\BACKUP SIHESLER\Proyecto Farmacia\Proyecto_Farmacia\BLL\bin\Debug\BLL.pdb
+D:\BACKUP SIHESLER\Proyecto Farmacia\Proyecto_Farmacia\BLL\bin\Debug\DAL.dll
+D:\BACKUP SIHESLER\Proyecto Farmacia\Proyecto_Farmacia\BLL\bin\Debug\DAL.pdb
+D:\BACKUP SIHESLER\Proyecto Farmacia\Proyecto_Farmacia\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\BACKUP SIHESLER\Proyecto Farmacia\Proyecto_Farmacia\BLL\obj\Debug\BLL.dll
+D:\BACKUP SIHESLER\Proyecto Farmacia\Proyecto_Farmacia\BLL\obj\Debug\BLL.pdb
